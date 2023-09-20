@@ -3,8 +3,11 @@ package com.example.productmicroservices; // Update with your actual package nam
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
+@ComponentScan(basePackages = { "com.example.productmicroservices.*"})
 public class ProductMicroservicesApplication {
 
     public static void main(String[] args) {
