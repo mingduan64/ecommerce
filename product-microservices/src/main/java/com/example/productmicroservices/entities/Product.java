@@ -6,6 +6,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "products")
+@Access(AccessType.FIELD)
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
