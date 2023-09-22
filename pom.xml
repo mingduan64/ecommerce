@@ -27,6 +27,8 @@
     <!-- Define the modules (child projects) here -->
     <modules>
         <module>product-microservices</module>
+        <module>order-microservices</module>
+        <module>gateway</module>
         <!-- Add other child modules if needed -->
     </modules>
 </project>
